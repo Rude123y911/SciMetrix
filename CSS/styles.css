@@ -1,0 +1,95 @@
+body {
+    padding: 0%;
+    margin: 0%;
+    background: url(../Images/background-image.jpeg) no-repeat center top;
+    background-size: cover;
+    font-family: sans-serif;
+    height: 100vh; /*para que la imagen sea de la altura de la ventana*/
+}
+
+.login-box {
+    width: 320px;
+    height: 420px;
+    /* background: #cccccc; */
+    background: #000;
+    border-radius: 20px;
+    color: #fff; /*color del texto*/
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    
+}
+
+.login-box .avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px; /*para convertir la caja en un circulo*/
+    position: absolute; /*para que se ubique delante*/
+    top: -50px;
+    left: calc(50% - 50px); /*50% a la izq menos los 50px del top*/
+}
+
+.login-box label {
+    margin: 0px;
+    padding: 0px;
+    font-weight: bold;
+    display: block;
+}
+
+.login-box h1 {
+    margin: 0px;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 25px;
+
+}
+
+.login-box input {
+    width: 100%;
+    margin-bottom: 20px;
+    /* margin-top: 5px; */
+}
+
+.login-box input[type="text"],
+.login-box input[type="password"] {
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.login-box input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 35px;
+    border-radius:20px;
+    background-color: #007AEA;
+    color: #fff;
+    font-size: 18px;
+} 
+
+.login-box a {
+    text-decoration: none; /*quita la línea del piso*/
+    font-size: 12px;
+    /*línea divisora... jummm*/
+    line-height: 20px;
+    color: darkgray;
+}
+
+.login-box a:hover {
+    color: #fff;
+}
+
+.login-box input[type="submit"]:hover {
+    cursor: pointer;
+}
+
+.login-box input[type="submit"]:active {
+    background-color: #0056a5;
+}
