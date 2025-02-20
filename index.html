@@ -3,26 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="CSS/styles.css">
+    <title>Cargar Archivos</title>
 </head>
 <body>
-    <div class="login-box">
-        <img class="avatar" src="Images/user.png" alt="Login icon">
-        <h1>Login Here</h1>
-        <form action="">
-            <!-- USERNAME -->
-            <label for="username">Username</label>
-            <input type="text" placeholder="Username">
-            
-            <!-- PASSWORD -->
-            <label for="password">Password</label>
-            <input type="password" placeholder="Password">
-
-            <input type="submit" value="Log in">
-            <a href="#">Forgot your password?</a> <br>
-            <a href="#">Create an account</a>
-        </form>
-    </div>
+    <h2>Subir Archivo</h2>
+    <input type="file" id="fileInput">
+    <script>
+        document.getElementById('fileInput').addEventListener('change', function(event) {
+            let file = event.target.files[0];
+            if (file) {
+                alert('Archivo seleccionado: ' + file.name);
+            }
+        });
+    </script>
 </body>
 </html>
